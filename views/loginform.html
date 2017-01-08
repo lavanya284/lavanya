@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-md-12">
+        <p>Login via</p>
+        <div class="social-buttons">
+            <a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+            <a href="#" class="btn btn-tw"><i class="fa fa-twitter"></i> Twitter</a>
+        </div>
+        <p>or</p>
+        <form role="form" method="post" accept-charset="UTF-8" name="login-form" ng-submit="login()">
+            <div class="form-group">
+                <input type="email" ng-model="useremail" class="form-control" name="userEmailID" id="userEmailID" placeholder="Enter Email address"
+                    required>
+            </div>
+            <div class="form-group">
+                <input type="password" ng-model="userPassword" class="form-control" id="userPassword" placeholder="Enter Password" required>
+                <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+            </div>
+        </form>
+    </div>
+</div>
