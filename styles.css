@@ -297,7 +297,7 @@ height:200px;
     height: 30px;
     overflow: hidden;
 }
-.thumb img {
+.thumb img,#allcatpage img{
     width: 270px;
     height: 200px;
 }
@@ -312,6 +312,7 @@ background-color:#FFFAF0
 #itemdisplay{
     margin-top: 20%;
     padding: 0px;
+    position: relative;
 }
 .items-select-title{
     font-family: 'Grand Hotel',cursive;
@@ -320,4 +321,15 @@ background-color:#FFFAF0
     line-height: 80px;
     font-size: 38px;
 } 
-
+.affix {
+      top: 20px;
+  }
+#allcatpage{
+    margin: 7%;
+}
+#sort-drpdwn{
+    margin-bottom: 2%
+}
+#sort-drpdwn a{
+    display:inline-block;
+}

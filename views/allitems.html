@@ -1,0 +1,27 @@
+<div class="row bg-div" ng-style="{'background-image':'url('+imgURL+')', 'height':'auto'}">
+<div id="allcatpage">
+    <div class="dropdown" id="sort-drpdwn">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Sort By
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li><a ng-click="sort('price')">Price</a><span class="glyphicon sort-icon" ng-show="sortKey==='price'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></li>
+            <li><a ng-click="sort('ratings')">Reviews</a><span class="glyphicon sort-icon" ng-show="sortKey==='ratings'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></li>
+            <li><a ng-click="sort('time')">Time Required</a><span class="glyphicon sort-icon" ng-show="sortKey==='time'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span></li>
+        </ul>
+    </div>
+    <div class="row showitem">
+            <div class="col-xs-3" ng-repeat="image in allItemImages|orderBy:sortKey:reverse">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="{{image.url}}" alt="{{image.name}}">
+                    <div class="caption item-content">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-eye-open"></span> View
+                        </button>
+                        <span class="disname">{{image.name}}</span>
+                        <span class="disprice">{{image.price}}</span>
+                    </div>
+                </div>
+            </div>
+    </div>
+ </div>
+</div>

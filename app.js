@@ -1,4 +1,4 @@
- angular.module("dyw",['ngRoute'])
+ angular.module("dyw",['ngRoute','angular-rating'])
  .config(function($routeProvider) {
      $routeProvider
         .when('/', {
@@ -8,6 +8,10 @@
         .when('/MainPage', {
           templateUrl: 'views/mainpage.html',
           controller: 'MainController'
+         })
+         .when('/AllItems', {
+          templateUrl: 'views/allitems.html',
+          controller: 'AllController'
          })
         .otherwise({
           redirectTo: '/'
