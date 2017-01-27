@@ -76,15 +76,6 @@
 .carousel {
   font-size: 21px;
 }
-.transBG{
- filter: alpha(opacity=60);
- opacity: 0.6;
- background: #000;
- border-radius: 5px;
- -moz-border-radius: 5px;
--webkit-border-radius: 5px;
-height:200px;
-}
 .carousel-caption {
   z-index: 1;
   color: #000;
@@ -302,7 +293,8 @@ height:200px;
     height: 200px;
 }
 #itemdisplay .thumbnail{
-background-color:#FFFAF0
+background-color:#FFFAF0;
+cursor: pointer;
 }
 .post-content span {
     line-height: 30px;
@@ -333,3 +325,32 @@ background-color:#FFFAF0
 #sort-drpdwn a{
     display:inline-block;
 }
+.itemdetail, #detailcarousel{
+    margin-top: 52px;
+}
+ #detailcarousel .tab-content img{
+     width: 600px;
+     height: 400px;
+ }
+ .product-title{
+    color: #000;
+    margin-top: 52px;
+    font-family: 'Grand Hotel',cursive;
+    font-size: 40px;
+ }
+ #imageContent{
+     font-family: 'cambria';
+     background-color: #fff;
+     margin-top: 52px;
+     font-size: 17px;
+ }
+ .cartandbuy{
+     margin-bottom: 20px;
+     align-content: center;
+ }
+ #details-ul{
+     border-bottom: 0px;
+ }
+ .cartcontainer{
+     margin-top: 8%;
+ }

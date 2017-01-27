@@ -5,10 +5,10 @@
     </div>
     <ul class="nav navbar-nav">
       <li><a href='#!/MainPage'>Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-    </ul>
+   </ul>
     <ul class="nav navbar-nav navbar-right">
+      <li id="cart"><a  ui-sref="Cartpage"><span class="glyphicon glyphicon-shopping-cart"></span> Cart <span class="cartlength">{{cartlen}}</span></a>
+      </li>
       <li class="dropdown" id="signup"><a class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
           <ul class="dropdown-menu animated fadeInRight" id="signupdrpdwn" >
                 <li>
@@ -23,6 +23,6 @@
                 </li>
             </ul>
       </li>
-    </ul>
+  </ul>
   </div>
 </nav>

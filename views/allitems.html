@@ -10,11 +10,11 @@
         </ul>
     </div>
     <div class="row showitem">
-            <div class="col-xs-3" ng-repeat="image in allItemImages|orderBy:sortKey:reverse">
+            <div class="col-xs-3" ng-repeat="image in allItemImages|filter:catshow|orderBy:sortKey:reverse">
                 <div class="thumbnail">
                     <img class="img-responsive" src="{{image.url}}" alt="{{image.name}}">
                     <div class="caption item-content">
-                        <button type="button" class="btn btn-default">
+                        <button type="button" class="btn btn-default" ui-sref="ItemDetail" ng-click="itemdetail(image)">
                             <span class="glyphicon glyphicon-eye-open"></span> View
                         </button>
                         <span class="disname">{{image.name}}</span>

@@ -1,0 +1,17 @@
+<div class="row bg-div" ng-style="{'background-image':'url('+imgURL+')'}">
+    <div class="container cartcontainer">
+        <div class="table-responsive">
+      <table class="table table-striped">
+           <tbody>
+                  <tr><th>Product</th><th>Quantity</th><th>Price</th><th>Total</th></tr>
+                  <tr ng-repeat="product in cart_data track by $index|unique:'product.id'">
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.name }}</td>
+                    <td>{{ product.price }}</td>
+                    <td>{{ product.total }}</td>
+                </tr>
+              </tbody>
+      </table>
+        </div>
+    </div>
+</div>

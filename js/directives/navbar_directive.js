@@ -3,6 +3,7 @@ angular.module('dyw')
     return {
       restrict: 'E',
       replace: true,
-      templateUrl: 'views/navigation_template.html'
+      templateUrl: 'views/navigation_template.html',
+      controller: 'navbarController'
     };
   });

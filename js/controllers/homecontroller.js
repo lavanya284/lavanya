@@ -3,9 +3,8 @@ angular.module('dyw')
     'use strict';
     $scope.toEnter=false;
     $scope.imgURL = '/public/pic1.jpg';
-    $scope.homepage = function(path){
+    $scope.homepage = function(){
         $scope.toEnter=true;
-        $location.path(path);
-     };
-    
-  });
+    };
+   
+ });

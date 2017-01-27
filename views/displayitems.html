@@ -2,7 +2,7 @@
     <div class="row category-child">
         <h3 class="items-select-title text-center" id="occsiontypes">Gifts by Occassion</h3>
         <div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','birthday')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('birthday','occassion')" >
                     <img class="img-responsive" src="\public\pic12.jpg" alt=""> 
                     <div class="itemtextwrapper">
                         <div class="caption post-content">
@@ -12,7 +12,7 @@
                 </div>
         </div>
 		<div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','Aniversary')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('aniversary','occassion')">
 					<img class="img-responsive" src="\public\pic16.jpg" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -22,7 +22,7 @@
                 </div>
         </div> 
 		<div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','Marraige')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('marraige','occassion')">
                     <img class="img-responsive" src="\public\pic18.jpg" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -32,7 +32,7 @@
                 </div>
         </div>
 		<div class="col-sm-3 thumb">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','allthebest')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('allthebest','occassion')">
 					<img class="img-responsive" src="\public\pic13.jpeg" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -45,7 +45,7 @@
     <div class="row category-child">
         <h3 class="items-select-title text-center" id="cattypes">Gifts by Category</h3>
        <div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','exboxes')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('exbox','type')">
                     <img class="img-responsive" src="\public\pic19.jpg" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -55,7 +55,7 @@
                 </div>
         </div>
 		<div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','scrapbooks')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('scrapbooks','type')">
 					<img class="img-responsive" src="\public\pic20.gif" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -65,7 +65,7 @@
                 </div>
         </div> 
 		<div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','grecards')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('grecard','type')">
                     <img class="img-responsive" src="\public\pic21.png" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -75,7 +75,7 @@
                 </div>
         </div>
 		<div class="col-sm-3 thumb">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','others')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('others','type')">
 					<img class="img-responsive" src="\public\pic22.png" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -88,7 +88,7 @@
     <div class="row category-child">
         <h3 class="items-select-title text-center" id="relationtypes">Gifts by Relationships</h3>
         <div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','love')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('love','relation')">
                     <img class="img-responsive" src="\public\pic23.jpg" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -98,7 +98,7 @@
                 </div>
         </div>
 		<div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','friends')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('friends','relation')">
 					<img class="img-responsive" src="\public\pic24.jpg" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -108,7 +108,7 @@
                 </div>
         </div> 
 		<div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','Parents')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('parents','relation')">
                     <img class="img-responsive" src="\public\pic25.jpg" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -118,7 +118,7 @@
                 </div>
         </div>
 		<div class="col-sm-3 thumb">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','siblings')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('siblings','relation')">
 					<img class="img-responsive" src="\public\pic26.jpg" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -131,7 +131,7 @@
     <div class="row category-child">
         <h3 class="items-select-title text-center" id="pricetypes">Gifts by Price range</h3>
         <div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','un500')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('under500','range')">
                     <img class="img-responsive" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -141,7 +141,7 @@
                 </div>
         </div>
 		<div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','un1000')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('under1000','range')">
 					<img class="img-responsive" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -151,7 +151,7 @@
                 </div>
         </div> 
 		<div class="col-sm-3 thumb ">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','un2000')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('under2000','range')">
                     <img class="img-responsive" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">
@@ -161,7 +161,7 @@
                 </div>
         </div>
 		<div class="col-sm-3 thumb">
-                <div class="thumbnail" ng-click="itemspage('/AllItems','un5000')">
+                <div class="thumbnail" ui-sref="AllItems" ng-click="itemspage('under5000','range')">
 					<img class="img-responsive" alt="">
                     <div class="wrapper">
                         <div class="caption post-content">

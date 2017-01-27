@@ -1,0 +1,77 @@
+<div class="container bg-div" ng-style="{'background-image':'url('+imgURL+')','width':'100%','height':'100%'}">
+    <div class="container-fluid itemdetail">
+        <div class="row">
+            <div class="col-xs-6" id="detailImage">
+                <div class="container" id="detailcarousel">
+                    <div class="tab-content">
+                        <div id="primage" class="tab-pane fade  in active">
+                            <img src="{{imgdata.url}}" alt="img">
+                        </div>
+                        <div id="primage1" class="tab-pane fade">
+                            <img src="\\public\\pic36.jpg" alt="img2">
+                        </div>
+                        <div id="primage2" class="tab-pane fade">
+                            <img src="\\public\\pic35.jpg" alt="img3">
+                        </div>
+                        <div id="primage3" class="tab-pane fade">
+                            <img src="\\public\\pic34.jpg" alt="img4">
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs" id="details-ul">
+                        <li class="active">
+                            <a data-toggle="tab" data-target="#primage"><img src="{{imgdata.url}}" alt="img" width="100px" height="100px"></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" data-target="#primage1"><img src="\\public\\pic36.jpg" alt="img2" width="100px" height="100px"></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" data-target="#primage2"><img src="\\public\\pic35.jpg" alt="img3" width="100px" height="100px"></a>
+                        </li>
+                        <li>
+                            <a data-toggle="tab" data-target="#primage3"><img src="\\public\\pic34.jpg" alt="img4" width="100px" height="100px"></a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <div class="col-xs-6" id="imageContent">
+                <h2 class="product-title" ng-model='prheading'>{{prheading}}</h2>
+                <div class="rating">
+							<div class="stars">
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star checked"></span>
+								<span class="fa fa-star"></span>
+								<span class="fa fa-star"></span>
+							</div>
+							<span class="rating">Rating: <span>{{imgdata.ratings}}</span> out of 5</span>
+				</div>
+                <p class="product-description">{{imgdata.desc}}</p>
+				<p class="price">Price: <span>{{imgdata.price}}</span></p>
+                <p class="days-to-complete">Dates to complete: <span>{{imgdata.time}} Days</span></p>
+                <p class="shipping-days">Time for shipping: <span>4-7 Days * </span></p>
+                <p class="Note">Note: <span>Shipping days may vary with respect to city</span>
+                <p>Colours may vary</p></p>
+                <div class="cartandbuy">
+                <button class="add-to-cart btn btn-primary" type="button" data-toggle="modal" data-target="#myModal" ng-click="addtocart(imgdata)">Add to cart</button>
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Hi Guest</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>Your item is successfully added to cart</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+                <button class="buy-now btn btn-primary" type="button">Buy now</button>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
